@@ -27,7 +27,7 @@
 
 ## Overview
 
-![screenshot]([https://github.com/ninokitoshvili/404-not-found-task/blob/main/Screenshot%20(109).png])
+![screenshot](https://github.com/ninokitoshvili/404-not-found-task/blob/main/Screenshot%20(109).png)
 
 
 - Its my first time tring to make responsive page my grids.
