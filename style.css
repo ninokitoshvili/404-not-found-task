@@ -1,0 +1,161 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: inconsolata;
+	src: url(fonts/Inconsolata-Regular.ttf);
+}
+@font-face {
+	font-family: SpaceMono;
+	src: url(fonts/SpaceMono-Regular.ttf);
+}
+@font-face {
+	font-family: Montserrat;
+	src: url(fonts/Montserrat-Regular.ttf);
+}
+
+body {
+	background: #ffffff;
+	box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	color: #333333;
+}
+header {
+	width: 100%;
+	height: 5em;
+}
+
+header div {
+	width: 133px;
+	height: 25px;
+	left: 4.79em;
+	top: 2.5em;
+	position: absolute;
+}
+header h1 {
+	font-size: 1.25rem;
+	line-height: 1.6rem;
+	font-family: inconsolata;
+	/* font-style: normal; */
+	font-weight: 700;
+	/* font-size: 24px;
+	line-height: 25px;
+	letter-spacing: -0.08em; */
+	text-transform: uppercase;
+	/* left: 4.79em;
+	top: 2.5em;
+	position: absolute; */
+}
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: calc(100vh - 7.5em);
+	align-content: center;
+	gap: 7.5em;
+}
+.img_container {
+	justify-self: self-end;
+}
+.img_container div {
+	/* width: 33.5em;
+	height: 27em; */
+	/* background-image: url(Scarecrow.png); */
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+.img_container img {
+	width: 33.5em;
+	height: 27em;
+}
+.main_information {
+	max-width: 36.5em;
+	font-family: SpaceMono;
+	font-style: normal;
+}
+.main_information h2 {
+	font-weight: 700;
+	font-size: 4rem;
+	line-height: 6rem;
+	letter-spacing: -0.035em;
+}
+
+.main_information p {
+	max-width: 16em;
+	color: #4f4f4f;
+	margin: 2em 0;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	letter-spacing: -0.035em;
+}
+.main_information button {
+	background: #333333;
+	color: #ffffff;
+	width: 15.5em;
+	height: 5em;
+	font-weight: 700;
+	/* font-size: 14px; */
+	font-size: 0.86rem;
+	/* line-height: 21px; */
+	line-height: 1.2rem;
+	letter-spacing: -0.035em;
+	text-transform: uppercase;
+}
+footer {
+	height: 2.5em;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	color: #bdbdbd;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+
+	font-size: 0.88rem;
+	line-height: 0.9rem;
+}
+@media (max-width: 1040px) {
+	main {
+		display: grid;
+		grid-template-rows: 1fr 2fr;
+		grid-template-columns: none;
+
+		gap: 1em;
+		margin: 0 1em;
+		height: auto;
+	}
+	.img_container,
+	.main_information {
+		justify-self: center;
+	}
+}
+@media (max-width: 540px) {
+	.img_container img {
+		width: 100%;
+		height: auto;
+	}
+}
+@media (max-width: 380px) {
+	main {
+		grid-template-rows: 1fr 2fr;
+	}
+	header div {
+		left: 1.5em;
+	}
+	.img_container img {
+		width: 75%;
+	}
+	.main_information {
+		max-width: 22em;
+	}
+	.main_information h2 {
+		line-height: 4rem;
+		font-size: 3rem;
+	}
+	.main_information p {
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+}
