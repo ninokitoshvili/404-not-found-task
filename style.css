@@ -37,15 +37,8 @@ header h1 {
 	font-size: 1.25rem;
 	line-height: 1.6rem;
 	font-family: inconsolata;
-	/* font-style: normal; */
 	font-weight: 700;
-	/* font-size: 24px;
-	line-height: 25px;
-	letter-spacing: -0.08em; */
 	text-transform: uppercase;
-	/* left: 4.79em;
-	top: 2.5em;
-	position: absolute; */
 }
 main {
 	display: grid;
@@ -58,9 +51,6 @@ main {
 	justify-self: self-end;
 }
 .img_container div {
-	/* width: 33.5em;
-	height: 27em; */
-	/* background-image: url(Scarecrow.png); */
 	background-size: cover;
 	height: 100%;
 	width: 100%;
@@ -96,13 +86,17 @@ main {
 	width: 15.5em;
 	height: 5em;
 	font-weight: 700;
-	/* font-size: 14px; */
 	font-size: 0.86rem;
-	/* line-height: 21px; */
 	line-height: 1.2rem;
 	letter-spacing: -0.035em;
 	text-transform: uppercase;
 }
+
+button:hover {
+	cursor: pointer;
+	opacity: 50%;
+}
+
 footer {
 	height: 2.5em;
 	align-items: center;
@@ -112,7 +106,6 @@ footer {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: 500;
-
 	font-size: 0.88rem;
 	line-height: 0.9rem;
 }
@@ -121,7 +114,6 @@ footer {
 		display: grid;
 		grid-template-rows: 1fr 2fr;
 		grid-template-columns: none;
-
 		gap: 1em;
 		margin: 0 1em;
 		height: auto;
@@ -143,6 +135,7 @@ footer {
 	}
 	header div {
 		left: 1.5em;
+		top: 1.5em;
 	}
 	.img_container img {
 		width: 75%;
@@ -157,5 +150,9 @@ footer {
 	.main_information p {
 		font-size: 1rem;
 		line-height: 1.5rem;
+	}
+	footer {
+		font-size: 0.6rem;
+		line-height: 0.8rem;
 	}
 }
